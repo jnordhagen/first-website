@@ -18,7 +18,7 @@ guessSubmit.addEventListener('click', checkGuess);
 
 const setParas = document.querySelectorAll('.resultParas p');
 for (let i = 0 ; i < setParas.length ; i++) {
-    resetParas[i].textContent = '';
+    setParas[i].textContent = '';
   }
 
 function checkGuess() {
