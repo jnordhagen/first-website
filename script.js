@@ -13,6 +13,9 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
+guessSubmit.addEventListener('click', checkGuess);
+resetGame();
+
 function checkGuess() {
     let userGuess = Number(guessField.value);
     if (guessCount === 1) {
@@ -42,8 +45,6 @@ function checkGuess() {
     guessField.value = '';
     guessField.focus();
 }
-
-guessSubmit.addEventListener('click', checkGuess);
 
 function setGameOver() {
     guessField.disabled = true;
