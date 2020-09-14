@@ -34,7 +34,7 @@ function checkGuess() {
         if (userGuess < randomNumber) {
             lowOrHi.textContent = 'Too low pfff';
         } else if (userGuess > randomNumber) {
-            lowOrHi.textContent = 'Too high, ya ninny';
+            lowOrHi.textContent = 'Too high.. smh';
         }
     }
 
