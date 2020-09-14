@@ -1,7 +1,7 @@
 // Jakob Nordhagen
 // This file implements the functionality of the number guessing game.
 
-let randomNumber = Math.floor(Math.random * 100) + 1;
+let randomNumber = 37;
 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
