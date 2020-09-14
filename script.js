@@ -13,8 +13,13 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
+
 guessSubmit.addEventListener('click', checkGuess);
-resetGame();
+
+const setParas = document.querySelectorAll('.resultParas p');
+for (let i = 0 ; i < setParas.length ; i++) {
+    resetParas[i].textContent = '';
+  }
 
 function checkGuess() {
     let userGuess = Number(guessField.value);
