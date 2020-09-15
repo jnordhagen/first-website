@@ -1,18 +1,21 @@
 // Jakob Nordhagen
 // This file implements the functionality of the number guessing game.
+// From MDN docs: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi');
-lowOrHi.textContent = '';
 
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
 
 let guessCount = 1;
 let resetButton;
+
+let insultStrings = ['wow dummy', 'lol try harder', '... smh', 'jeez, harold', 'I\'d say ur doing well but I\'d be lying', 
+'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your FAMERY'];
 
 function checkGuess() {
     let userGuess = Number(guessField.value);
@@ -30,12 +33,12 @@ function checkGuess() {
         lastResult.textContent = '!!!GAME OVER!!! You Died';
         setGameOver();
     } else {
-        lastResult.textContent = 'Wrong! lol try harder';
+        lastResult.textContent = 'Wrong! ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         lastResult.style.backgroundColor = 'red';
         if (userGuess < randomNumber) {
-            lowOrHi.textContent = 'Too low pfff';
+            lowOrHi.textContent = 'Too low, ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         } else if (userGuess > randomNumber) {
-            lowOrHi.textContent = 'Too high.. smh';
+            lowOrHi.textContent = 'Too high, ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         }
     }
 
