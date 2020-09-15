@@ -15,7 +15,7 @@ let guessCount = 1;
 let resetButton;
 
 let insultStrings = ['wow dummy', 'simply awful', '... smh', 'jeez, harold', 'I\'d say ur doing well but I\'d be lying', 
-'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your FAMERY', 'imagine being this dumb'];
+'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your family', 'imagine being this dumb'];
 
 function checkGuess() {
     let userGuess = Number(guessField.value);
