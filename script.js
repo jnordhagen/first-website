@@ -14,8 +14,9 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
-let insultStrings = ['wow dummy', 'simply awful', '... smh', 'jeez, harold', 'I\'d say ur doing well but I\'d be lying',
-'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your family', 'imagine being this dumb'];
+let insultStrings = ['wow dummy', 'simply awful', '... smh', 'jeez, Harold', 'I\'d say ur doing well but I\'d be lying',
+'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your family', 'imagine being this dumb',
+'have you tried *not* being terrible? might help', 'lol try harder', 'quick tip: jk you\'re beyond help'];
 
 function checkGuess() {
     let userGuess = Number(guessField.value);
@@ -35,7 +36,6 @@ function checkGuess() {
     } else {
         lastResult.textContent = 'Wrong!' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         lastResult.style.backgroundColor = 'red';
-        lastResult.style.textColor = 'white';
         if (userGuess < randomNumber) {
             lowOrHi.textContent = 'Your last guess was TOO LOW';
         } else if (userGuess > randomNumber) {
