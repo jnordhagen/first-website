@@ -35,6 +35,7 @@ function checkGuess() {
     } else {
         lastResult.textContent = 'Wrong!' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         lastResult.style.backgroundColor = 'red';
+        lastResult.style.textColor = 'white';
         if (userGuess < randomNumber) {
             lowOrHi.textContent = 'Your last guess was TOO LOW';
         } else if (userGuess > randomNumber) {
