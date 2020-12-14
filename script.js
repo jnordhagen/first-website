@@ -14,7 +14,7 @@ const guessField = document.querySelector('.guessField');
 let guessCount = 1;
 let resetButton;
 
-let insultStrings = ['wow dummy', 'simply awful', '... smh', 'jeez, harold', 'I\'d say ur doing well but I\'d be lying', 
+let insultStrings = ['wow dummy', 'simply awful', '... smh', 'jeez, harold', 'I\'d say ur doing well but I\'d be lying',
 'whoa look at this prodigy someone alert the media', 'you have brought disappointment to your family', 'imagine being this dumb'];
 
 function checkGuess() {
@@ -33,12 +33,12 @@ function checkGuess() {
         lastResult.textContent = '!!!GAME OVER!!! You Died';
         setGameOver();
     } else {
-        lastResult.textContent = 'Wrong! lol try harder';
+        lastResult.textContent = 'Wrong!' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         lastResult.style.backgroundColor = 'red';
         if (userGuess < randomNumber) {
-            lowOrHi.textContent = 'Too low, ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
+            lowOrHi.textContent = 'Your last guess was TOO LOW';
         } else if (userGuess > randomNumber) {
-            lowOrHi.textContent = 'Too high, ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
+            lowOrHi.textContent = 'Your last guess was TOO HIGH';
         }
     }
 
@@ -60,20 +60,20 @@ function setGameOver() {
 
   function resetGame() {
     guessCount = 1;
-  
+
     const resetParas = document.querySelectorAll('.resultParas p');
     for (let i = 0 ; i < resetParas.length ; i++) {
       resetParas[i].textContent = '';
     }
-  
+
     resetButton.parentNode.removeChild(resetButton);
-  
+
     guessField.disabled = false;
     guessSubmit.disabled = false;
     guessField.value = '';
     guessField.focus();
-  
+
     lastResult.style.backgroundColor = 'white';
-  
+
     randomNumber = Math.floor(Math.random() * 100) + 1;
   }
