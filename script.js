@@ -34,7 +34,7 @@ function checkGuess() {
         lastResult.textContent = '!!!GAME OVER!!! You Died';
         setGameOver();
     } else {
-        lastResult.textContent = 'Wrong!' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
+        lastResult.textContent = 'Wrong! ' + insultStrings[Math.floor(Math.random() * insultStrings.length)];
         lastResult.style.backgroundColor = 'red';
         if (userGuess < randomNumber) {
             lowOrHi.textContent = 'Your last guess was TOO LOW';
