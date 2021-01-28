@@ -63,7 +63,7 @@ function setGameOver() {
     guessCount = 1;
 
     const resetParas = document.querySelectorAll('.resultParas p');
-    for (let i = 0 ; i < resetParas.length ; i++) {
+    for (let i = 0; i < resetParas.length; i++) {
       resetParas[i].textContent = '';
     }
 
