@@ -1,16 +1,133 @@
 
 body {
-  background-color: black;
-  color: white;
+  color: #40514E;
   text-align: center;
+  margin: 0;
+  font-family: 'Merriweather', serif;
 }
 
-hr.name {
+h1 {
+  color: black;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Allura', cursive;
+}
+
+h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.top-container {
+  background-color: white;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 8rem;
+}
+
+.skill-row {
+  padding: 20px;
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+#skill-row2 {
+  text-align: right;
+}
+
+.laundry-pic {
+  border-radius: 50%;
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.cereal-pic {
+  width: 25%;
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
+
+.info {
+  width: 30%;
+  margin: auto;
+}
+
+.footer-link {
+  margin: auto 10px;
+}
+
+.links {
+  position: relative;
+  left: 30px;
+}
+
+#leopard {
+  border-radius: 55%;
   border: 2px solid gold;
+  margin-bottom: 200px;
 }
 
-.name {
-  color: gold;
-  font-size: 100;
-  font-family: Papyrus;
+.profile-pic:hover {
+  transform: scaleX(-1);
+}
+
+.btn {
+  background: #48aef2;
+  background-image: -webkit-linear-gradient(top, #48aef2, #186494);
+  background-image: -moz-linear-gradient(top, #48aef2, #186494);
+  background-image: -ms-linear-gradient(top, #48aef2, #186494);
+  background-image: -o-linear-gradient(top, #48aef2, #186494);
+  background-image: linear-gradient(to bottom, #48aef2, #186494);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 14px 7px 14px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #28f747;
+  background-image: -webkit-linear-gradient(top, #28f747, #199955);
+  background-image: -moz-linear-gradient(top, #28f747, #199955);
+  background-image: -ms-linear-gradient(top, #28f747, #199955);
+  background-image: -o-linear-gradient(top, #28f747, #199955);
+  background-image: linear-gradient(to bottom, #28f747, #199955);
+  text-decoration: none;
 }
