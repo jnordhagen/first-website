@@ -47,9 +47,6 @@ hr {
   margin: 100px 0;
 }
 
-.bottom-container {
-
-}
 
 .profile-pic {
   border-radius: 50%;
@@ -98,7 +95,7 @@ hr {
 #leopard {
   border-radius: 55%;
   border: 2px solid gold;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .profile-pic:hover {
