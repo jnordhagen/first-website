@@ -47,10 +47,8 @@ hr {
   margin: 100px 0;
 }
 
-
 .profile-pic {
-  border-radius: 50%;
-  width: 8rem;
+  border-radius: 30%;
 }
 
 .skill-row {
